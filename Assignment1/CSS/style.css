@@ -1,0 +1,32 @@
+body {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif; 
+    font-size: 16px; 
+    line-height: 1.6;
+    margin: 40px;
+    color: #000000;
+    background-color: #ffffff; 
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #1a73e8; 
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+
+a:hover {
+    color: #1558b0; 
+    text-decoration: none;
+}
+
