@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.intro {
+  font-weight: bold;
+  color: brown;
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.intro-text {
+  font-size: 16px;
+  margin-bottom: 48px;
+}
+
+
+.card {
+  width: 50%;
+  border: 1px solid #ccc; 
+  
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-bottom: 12px;
+}
+
+
+.card-title {
+  margin: 0 0 8px 0;
+}
+
+
+.card-desc {
+  font-size: 12px;
+  margin: 0;
+}
+
