@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 400vh;
+}
+
+.wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  height: 400vh;
+  align-items: flex-start;
+}
+
+.col {
+  flex: 1;
+}
+
+.col1 {
+  height: auto;
+}
+
+.col2 {
+  height: 50vh;
+}
+
+.col3 {
+  height: 100vh;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  background: green;
+  position: sticky;
+  top: 0;
+}
