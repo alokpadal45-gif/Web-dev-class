@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dark Mode Buttons</title>
+
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      transition: 0.3s;
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    .dark {
+      background-color: black;
+      color: white;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>I am superman</h1>
+
+ 
+  <div class="btn-group">
+    <button id="toggleBtn">Toggle mode</button>
+    <button id="addBtn">Add Dark Mode</button>
+    <button id="removeBtn">Remove Dark Mode</button>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById("toggleBtn");
+    const addBtn = document.getElementById("addBtn");
+    const removeBtn = document.getElementById("removeBtn");
+
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+
+    addBtn.addEventListener("click", () => {
+      document.body.classList.add("dark");
+    });
+
+    removeBtn.addEventListener("click", () => {
+      document.body.classList.remove("dark");
+    });
+  </script>
+
+</body>
+</html>

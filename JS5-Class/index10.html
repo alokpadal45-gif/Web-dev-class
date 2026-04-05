@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .box {
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px solid black;
+            background-color: lightgray;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="boss">Dilraj Bista</div>
+
+    <div class="box" id="box1">This is box 1</div>
+    <div class="box" id="box2">This is box 2</div>
+
+    <script>
+   
+        window.addEventListener('DOMContentLoaded', () => {
+
+            const boss = document.getElementById('boss');
+            boss.innerText = 'Ram Bahadur';
+
+            const box1 = document.getElementById('box1');
+            const box2 = document.getElementById('box2');
+
+            const boxes = document.querySelectorAll('.box');
+
+            console.log("Boss:", boss);
+            console.log("Box 1:", box1);
+            console.log("Box 2:", box2);
+            console.log("All Boxes:", boxes);
+
+            boxes.forEach((box, index) => {
+                box.addEventListener('click', () => {
+                    box.innerText = `current box ${index + 1}`;
+                    box.style.backgroundColor = "green";
+                });
+            });
+
+        });
+    </script>
+
+</body>
+</html>

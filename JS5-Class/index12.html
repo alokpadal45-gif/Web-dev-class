@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QuerySelectorAll Task</title>
+</head>
+<body>
+
+ 
+  <div class="wrapper">
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+  </div>
+
+ 
+  <div class="wrapper">
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+  </div>
+
+  <script>
+    const wraps = document.querySelectorAll('.wrapper');
+
+    wraps.forEach((wrap) => {
+
+    
+      const boxes = wrap.querySelectorAll('.box');
+
+
+      boxes.forEach((box, index) => {
+        box.innerText = `Box ${index + 1}`;
+      });
+
+    });
+  </script>
+
+</body>
+</html>
