@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mixed Box Naming</title>
+</head>
+<body>
+
+
+  <div class="wrapper">
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+  </div>
+
+  
+  <div class="wrapper">
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+  </div>
+
+  <script>
+    const wraps = document.querySelectorAll('.wrapper');
+
+    wraps.forEach((wrap, wrapIndex) => {
+      const boxes = wrap.querySelectorAll('.box');
+
+      boxes.forEach((box, index) => {
+        
+        if (wrapIndex === 0) {
+         
+          if (index === 0) {
+            box.innerText = "First Box";
+          } else {
+            box.innerText = "Second Box";
+          }
+        } else {
+         
+          box.innerText = `Box ${index + 1}`;
+        }
+
+      });
+    });
+  </script>
+
+</body>
+</html>
